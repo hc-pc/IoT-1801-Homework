@@ -1,7 +1,7 @@
 //由于Java语言的特殊性，这里只写核心代码
 
-import java.Math
-import java.util.Scanner
+import java.Math;
+import java.util.Scanner;
 
 public class /*文件名*/ {
 
