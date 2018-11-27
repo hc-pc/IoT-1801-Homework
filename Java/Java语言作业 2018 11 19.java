@@ -28,7 +28,7 @@ public class /*文件名*/ {
 		return a + b;
 	}
 
-	public static int add(int a, int b) {
+	public static int addprint(int a, int b) {
 		System.out.println(a + b);
 	}
 
