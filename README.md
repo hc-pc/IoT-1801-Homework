@@ -3,7 +3,8 @@
 ### C语言：
  - [X] 遍历输出下标([2018-11-14](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2018%2011%2014))
  - [X] 凯撒密码加密([2018-11-21](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2011%2021))
- - [X] 凯撒密码加密进阶 非作业 ([2018-11-28](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2011%2028))
+ - [ ] 凯撒密码加密进阶 <sup>非作业</sup> ([2018-11-28](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2011%2028))
+ - [X] 选择排序数组([2018-11-28](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2011%2028))
 
 ------
 
