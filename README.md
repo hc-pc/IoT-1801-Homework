@@ -20,9 +20,9 @@
    - [X] [visiter](https://github.com/iPlanC/IoT-1801-Homework/blob/master/Java/2018%2011%2027/visiter.java)
    - [X] [mainclass](https://github.com/iPlanC/IoT-1801-Homework/blob/master/Java/2018%2011%2027/mainclass.java)
 
- - [ ] 球员类的实现 [2018-12-13](#)
-   - [ ] [Players](#)
-   - [ ] [mainclass](#)
+ - [ ] 球员类的实现 [2018-12-13](https://github.com/iPlanC/IoT-1801-Homework/tree/master/Java/2018%2012%2013%201)
+   - [ ] [Players](https://github.com/iPlanC/IoT-1801-Homework/blob/master/Java/2018%2012%2013%201/Players.java)
+   - [ ] [mainclass](https://github.com/iPlanC/IoT-1801-Homework/blob/master/Java/2018%2012%2013%201/mainclass.java)
 
  - [ ] 汽车类的实现 [2018-12-13](#)
    - [ ] [Vehicle](#)
