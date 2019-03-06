@@ -2,53 +2,53 @@
 #include <String.h>
 
 int UserInfo[2];
-//¿¨ºÅ ÃÜÂë Óà¶î
+//å¡å· å¯†ç  ä½™é¢
 //0    1    2
 
 
 int ShowFunctions() {
 	int temp;
 	
-	printf("ÇëÊäÈë¹¦ÄÜÇ°Êı×ÖÀ´Ê¹ÓÃ¹¦ÄÜ\n\n");
-	printf("1.¿ª»§\t2.´¢Ğî\t3.È¡¿î\t4.²éÑ¯\n");
-	printf("5.Ïú»§\t0.ÍË³ö\n");
+	printf("è¯·è¾“å…¥åŠŸèƒ½å‰æ•°å­—æ¥ä½¿ç”¨åŠŸèƒ½\n\n");
+	printf("1.å¼€æˆ·\t2.å‚¨è“„\t3.å–æ¬¾\t4.æŸ¥è¯¢\n");
+	printf("5.é”€æˆ·\t0.é€€å‡º\n");
 	scanf("%d", &temp);
 	
 	switch (temp) {
 		case 0:
 			return 0;
 		case 1:
-			printf("ÇëÊäÈëÄúÏ£ÍûµÄÃÜÂë£¨ÁùÎ»£©\n");
+			printf("è¯·è¾“å…¥æ‚¨å¸Œæœ›çš„å¯†ç ï¼ˆå…­ä½ï¼‰\n");
 			scanf("%d", &UserInfo[1]);
-			printf("ÇëÊäÈëÄúµÄ¿ª»§Óà¶î\n");
+			printf("è¯·è¾“å…¥æ‚¨çš„å¼€æˆ·ä½™é¢\n");
 			scanf("%d", &UserInfo[2]);
-			printf("¿¨ºÅ£º%d\nÓà¶î£º%d\n", UserInfo[0], UserInfo[2]);
+			printf("å¡å·ï¼š%d\nä½™é¢ï¼š%d\n", UserInfo[0], UserInfo[2]);
 			return 1;
 		case 2:
 			int save;
-			printf("ÇëÊäÈë´æ¿î½ğ¶î:\n");
+			printf("è¯·è¾“å…¥å­˜æ¬¾é‡‘é¢:\n");
 			scanf("%d", &save);
 			UserInfo[2] = UserInfo[2] + save;
 			return 2;
 		case 3:
 			int drow;
 			int tempPassword;
-			printf("ÇëÊäÈëÄúµÄÃÜÂë:\n");
+			printf("è¯·è¾“å…¥æ‚¨çš„å¯†ç :\n");
 			scanf("%d", &tempPassword); 
 			if (tempPassword == UserInfo[1]) {
-				printf("ÇëÊäÈëÈ¡¿î½ğ¶î:\n");
+				printf("è¯·è¾“å…¥å–æ¬¾é‡‘é¢:\n");
 				scanf("%d", &drow);
 				if (drow > UserInfo[2]) {
-					printf("ÄúµÄÓà¶î²»×ã\n");
+					printf("æ‚¨çš„ä½™é¢ä¸è¶³\n");
 				}
 				else {
 					UserInfo[2] = UserInfo[2] - drow;
-					printf("ÄúµÄÓà¶îÎª:%d\n", UserInfo[2]);
+					printf("æ‚¨çš„ä½™é¢ä¸º:%d\n", UserInfo[2]);
 				}
 			}
 			return 3;
 		case 4:
-			printf("¿¨ºÅ£º%d\nÓà¶î£º%d\n", UserInfo[0], UserInfo[2]);
+			printf("å¡å·ï¼š%d\nä½™é¢ï¼š%d\n", UserInfo[0], UserInfo[2]);
 			return 4;
 		case 5:
 			UserInfo[0] = 10000; 
@@ -63,29 +63,29 @@ int main() {
 	UserInfo[1] = 000000;
 	UserInfo[2] = 0;
 		
-	printf("»¶Ó­À´µ½´¢Ğî×ÛºÏÒµÎñÆ½Ì¨\n");
+	printf("æ¬¢è¿æ¥åˆ°å‚¨è“„ç»¼åˆä¸šåŠ¡å¹³å°\n");
 	char UserName[6] = "PlanC";
 	char UserPassword[7] = "114514";
 	char InputName[6], InputPassword[7];
 	int RetryTimes = 0;
 	
 	for (RetryTimes = 0; RetryTimes < 3; RetryTimes++) {
-		printf("ÇëÊäÈëÓÃ»§Ãû:\n");
+		printf("è¯·è¾“å…¥ç”¨æˆ·å:\n");
 		scanf("%s", InputName);
 		if (strcmp(InputName, UserName)) {
-			printf("ÓÃ»§Ãû²»ÕıÈ·£¬ÇëÖØÊÔ¡£\n");
+			printf("ç”¨æˆ·åä¸æ­£ç¡®ï¼Œè¯·é‡è¯•ã€‚\n");
 			if (RetryTimes == 2) {
-				printf("Èı´Î´íÎó£¬³ÌĞòÍË³ö¡£");
+				printf("ä¸‰æ¬¡é”™è¯¯ï¼Œç¨‹åºé€€å‡ºã€‚");
 				return 1;
 			}
 		}
 		else {
-			printf("ÇëÊäÈëÃÜÂë:\n");
+			printf("è¯·è¾“å…¥å¯†ç :\n");
 			scanf("%s", InputPassword);
 			if (strcmp(InputPassword, UserPassword)) {
-				printf("ÃÜÂë²»ÕıÈ·£¬ÇëÖØÊÔ¡£\n");
+				printf("å¯†ç ä¸æ­£ç¡®ï¼Œè¯·é‡è¯•ã€‚\n");
 				if (RetryTimes == 2) {
-					printf("Èı´Î´íÎó£¬³ÌĞòÍË³ö¡£");
+					printf("ä¸‰æ¬¡é”™è¯¯ï¼Œç¨‹åºé€€å‡ºã€‚");
 				}
 				return 2;
 			}
