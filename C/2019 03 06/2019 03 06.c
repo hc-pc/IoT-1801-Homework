@@ -26,7 +26,7 @@ void SortPrint() {
 			}
 		}
 		BackupArray[Index] = 0;
-		printf("%d\t", CurrentMax);
+		printf("%d:%d\n", Index + 1, CurrentMax);
 		CurrentMax = 0;
 	}
 	printf("\n");
