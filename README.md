@@ -10,8 +10,9 @@
  - [X] [选择排序数组](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2018%2011%2028/2018%2011%2028.c) ([2018-11-28](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2011%2028))
 
  - [X] [冒泡排序数组](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2018%2012%2011/2018%2012%2011.c) ([2018-12-11](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2012%2011))
- 
- - [X] [银行管理系统](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2019%2003%2006.c)<sup>非作业</sup> ([2019-03-06](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2019%2003%2006.c))
+
+ - [X] [银行管理系统](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2019%2003%2006/2019%2003%2006%5B非作业%5D.c)<sup>非作业</sup> ([2019-03-06](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2019%2003%2006))
+ - [X] [学生管理系统](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2019%2003%2006/2019%2003%2006.c)([2019-03-06](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2019%2003%2006))
 
 ------
 
@@ -29,5 +30,5 @@
  - [X] 汽车类的实现 [2018-12-13](https://github.com/iPlanC/IoT-1801-Homework/tree/master/Java/2018%2012%2013%202)
    - [X] [Vehicle](https://github.com/iPlanC/IoT-1801-Homework/blob/master/Java/2018%2012%2013%202/Vehicle.java)
    - [X] [mainclass](https://github.com/iPlanC/IoT-1801-Homework/blob/master/Java/2018%2012%2013%202/mainclass.java)
- 
+
 ------
