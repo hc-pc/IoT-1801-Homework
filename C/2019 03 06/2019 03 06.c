@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <String.h>
 
-	int StudentScore[5];
-	//int StudentScore[5] = {12, 34, 53, 74, 86};
+int StudentScore[5];
+//int StudentScore[5] = {12, 34, 53, 74, 86};
 
 void SortPrint() {
 	int i = 0;
@@ -11,13 +11,13 @@ void SortPrint() {
 	int Index = 0;
 	int CurrentMax = 0;
 	int BackupArray[5];
-	
+
 	for (i = 0; i < 5; i++) {
 		BackupArray[i] = StudentScore[i];
 	}
-	
+
 	CurrentMax = BackupArray[0];
-	
+
 	for (i = 0; i < 5; i++) {
 		for (j = 0; j < 5; j++) {
 			if (CurrentMax < BackupArray[j]) {
@@ -38,45 +38,45 @@ int FunctionList() {
 	int max = StudentScore[0];
 	int min = StudentScore[0];
 	float TotalScore = 0;
-	
+
 	printf("\n");
 	printf("+--------------------------------+\n");
-	printf("| 1.²é  Ñ¯   2.×î¸ß·Ö   3.×îµÍ·Ö |\n");
-	printf("| 4.Æ½¾ù·Ö              0.ÍË  ³ö |\n");
+	printf("| 1.æŸ¥  è¯¢   2.æœ€é«˜åˆ†   3.æœ€ä½åˆ† |\n");
+	printf("| 4.å¹³å‡åˆ†              0.é€€  å‡º |\n");
 	printf("+--------------------------------+\n");
 	scanf("%d", &FunctionIndex);
-	
+
 	switch (FunctionIndex) {
-		case 0: //ÍË³ö 
+		case 0: //é€€å‡º
 			return 0;
-		case 1: //²éÑ¯
-			printf("·ÖÊı±íÎª\n");
+		case 1: //æŸ¥è¯¢
+			printf("åˆ†æ•°è¡¨ä¸º\n");
 			SortPrint();
 			return 1;
-		case 2: //×î¸ß·Ö 
+		case 2: //æœ€é«˜åˆ†
 			for (i = 1; i < 5; i++) {
 				if (max < StudentScore[i]) {
 					max = StudentScore[i];
 				}
 			}
-			printf("×î´óÖµÎª%d\n", max);
+			printf("æœ€å¤§å€¼ä¸º%d\n", max);
 			return 2;
-		case 3: //×îµÍ·Ö 
+		case 3: //æœ€ä½åˆ†
 			for (i = 1; i < 5; i++) {
 				if (min > StudentScore[i]) {
 					min = StudentScore[i];
 				}
 			}
-			printf("×îĞ¡ÖµÎª%d\n", min);
+			printf("æœ€å°å€¼ä¸º%d\n", min);
 			return 3;
-		case 4: //Æ½¾ù·Ö 
+		case 4: //å¹³å‡åˆ†
 			for (i = 0; i < 5; i++) {
 				TotalScore = TotalScore + StudentScore[i];
 			}
-			printf("Æ½¾ù·ÖÎª%.2f", TotalScore / 5);
+			printf("å¹³å‡åˆ†ä¸º%.2f", TotalScore / 5);
 			return 4;
 		default:
-			printf("´íÎóÊäÈë£¬ÇëÖØĞÂºË¶Ô¹¦ÄÜ±í");
+			printf("é”™è¯¯è¾“å…¥ï¼Œè¯·é‡æ–°æ ¸å¯¹åŠŸèƒ½è¡¨");
 			return 5;
 	}
 }
@@ -89,44 +89,71 @@ int main() {
 	int RetryTimes = 0;
 
 	printf("+--------------------+\n");
-	printf("|»¶Ó­À´µ½Ñ§Éú¹ÜÀíÏµÍ³|\n");
+	printf("|æ¬¢è¿æ¥åˆ°å­¦ç”Ÿç®¡ç†ç³»ç»Ÿ|\n");
 	printf("+--------------------+\n");
 
-	printf("ÇëÊäÈëÓÃ»§Ãû\n");
-	for (RetryTimes = 0; RetryTimes < 3; RetryTimes++) {
+	printf("è¯·è¾“å…¥ç”¨æˆ·å\n");
+	for (RetryTimes; RetryTimes < 4; RetryTimes++) {
 		scanf("%s", InputName);
 		if (strcmp(UserName, InputName)) {
-			printf("ÃÜÂë´íÎó£¬ÇëÖØÊÔ£¬Ê£Óà»ú»á%d\n", 2 - RetryTimes);
+			printf("ç”¨æˆ·åé”™è¯¯ï¼Œè¯·é‡è¯•ï¼Œå‰©ä½™æœºä¼š%d\n", 2 - RetryTimes);
 			if (RetryTimes == 3) {
-				printf("Èı´Î´íÎó£¬³ÌĞòÍË³ö");
+				printf("ä¸‰æ¬¡é”™è¯¯ï¼Œç¨‹åºé€€å‡º");
 				return 1;
 			}
 		} else {
-			printf("ÇëÊäÈëÃÜÂë\n");
-			scanf("%s", InputPassword);
-			if (strcmp(UserPassword, InputPassword)) {
-				printf("ÃÜÂë´íÎó£¬ÇëÖØÊÔ£¬Ê£Óà»ú»á%d\n", 2 - RetryTimes);
-				if (RetryTimes == 3) {
-					printf("Èı´Î´íÎó£¬³ÌĞòÍË³ö");
-					return 2;
-				}
-			}
-			else {
-				break;
-			}
+			break;
 		}
 	}
 
-	system("cls");
+	printf("è¯·è¾“å…¥å¯†ç ");
+	for (RetryTimes; RetryTimes < 4; RetryTimes++) {
+		scanf("%s", InputPassword);
+		if (strcmp(UserPassword, InputPassword)) {
+			printf("å¯†ç é”™è¯¯ï¼Œè¯·é‡è¯•ï¼Œå‰©ä½™æœºä¼š%d\n", 2 - RetryTimes);
+			if (RetryTimes == 3) {
+				printf("ä¸‰æ¬¡é”™è¯¯ï¼Œç¨‹åºé€€å‡º");
+				return 2;
+			}
+		} else {
+			break;
+		}
+	}
 	
+//	for (RetryTimes = 0; RetryTimes < 3; RetryTimes++) {
+//		scanf("%s", InputName);
+//		if (strcmp(UserName, InputName)) {
+//			printf("ç”¨æˆ·åé”™è¯¯ï¼Œè¯·é‡è¯•ï¼Œå‰©ä½™æœºä¼š%d\n", 2 - RetryTimes);
+//			if (RetryTimes == 2) {
+//				printf("ä¸‰æ¬¡é”™è¯¯ï¼Œç¨‹åºé€€å‡º");
+//				return 1;
+//			}
+//		} else {
+//			printf("è¯·è¾“å…¥å¯†ç \n");
+//			scanf("%s", InputPassword);
+//			if (strcmp(UserPassword, InputPassword)) {
+//				printf("å¯†ç é”™è¯¯ï¼Œè¯·é‡è¯•ï¼Œå‰©ä½™æœºä¼š%d\n", 2 - RetryTimes);
+//				if (RetryTimes == 2) {
+//					printf("ä¸‰æ¬¡é”™è¯¯ï¼Œç¨‹åºé€€å‡º");
+//					return 2;
+//				}
+//			}
+//			else {
+//				break;
+//			}
+//		}
+//	}
+
+	system("cls");
+
 	int i = 0;
-	printf("ÇëÊäÈëÎåÎ»Ñ§Éú³É¼¨\n");
+	printf("è¯·è¾“å…¥äº”ä½å­¦ç”Ÿæˆç»©\n");
 	for (i = 0; i < 5; i++) {
 		scanf("%d", &StudentScore[i]);
 	}
-	
+
 	system("cls");
-	
+
 	while (true) {
 		if (FunctionList() == 0) {
 			return 0;
