@@ -93,11 +93,11 @@ int main() {
 	printf("+--------------------+\n");
 
 	printf("请输入用户名\n");
-	for (RetryTimes; RetryTimes < 4; RetryTimes++) {
+	for (RetryTimes; RetryTimes < 3; RetryTimes++) {
 		scanf("%s", InputName);
 		if (strcmp(UserName, InputName)) {
 			printf("用户名错误，请重试，剩余机会%d\n", 2 - RetryTimes);
-			if (RetryTimes == 3) {
+			if (RetryTimes == 2) {
 				printf("三次错误，程序退出");
 				return 1;
 			}
@@ -107,11 +107,11 @@ int main() {
 	}
 
 	printf("请输入密码");
-	for (RetryTimes; RetryTimes < 4; RetryTimes++) {
+	for (RetryTimes; RetryTimes < 3; RetryTimes++) {
 		scanf("%s", InputPassword);
 		if (strcmp(UserPassword, InputPassword)) {
 			printf("密码错误，请重试，剩余机会%d\n", 2 - RetryTimes);
-			if (RetryTimes == 3) {
+			if (RetryTimes == 2) {
 				printf("三次错误，程序退出");
 				return 2;
 			}
