@@ -5,7 +5,7 @@
 
  - [X] [凯撒密码加密](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2018%2011%2021/2018%2011%2021.c) ([2018-11-21](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2011%2021))
 
- - [ ] [凯撒密码加密进阶](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2018%2011%2028/2018%2011%2028%5B非作业%5D.c) <sup>非作业</sup> ([2018-11-28](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2011%2028))
+ - [X] [凯撒密码加密进阶](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2018%2011%2028/2018%2011%2028%5B非作业%5D.c) <sup>非作业</sup> ([2018-11-28](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2011%2028))
 
  - [X] [选择排序数组](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2018%2011%2028/2018%2011%2028.c) ([2018-11-28](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2011%2028))
 

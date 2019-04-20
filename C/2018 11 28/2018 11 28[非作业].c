@@ -4,9 +4,9 @@
 /*
  *
  *
- *æ³¨æ„ï¼š
+ *×¢Òâ£º
  *
- *å¼ æ´ªé“­ ç‰©è”ç½‘ 1801 2018-11-23 22ï¼š49
+ *ÕÅºéÃú ÎïÁªÍø 1801 2018-11-23 22£º49
  *
  */
 
@@ -23,21 +23,21 @@ int main() {
 		int temp;
 		scanf("%d",&key);
 		if (key < 3 || key > 26) {
-			printf("è¾“å…¥æœ‰è¯¯");
+			printf("ÊäÈëÓĞÎó");
 			return 1;
 		}
 		for (i = 0; i < strlen(toDecode); i++) {
-			//å¤§å†™æƒ…å†µ
+			//´óĞ´Çé¿ö
 			if ((int)toDecode[i] > 64 && (int)toDecode[i] < 91) {
 				printf("%c", alphabetUpper[(int)toDecode[i] + 65 - key]);
 			}
-			//å°å†™æƒ…å†µ
+			//Ğ¡Ğ´Çé¿ö
 			else if ((int)toDecode[i] > 96 && (int)toDecode[i] < 123) {
 				printf("%c", alphabetLower[(int)toDecode[i] + 97 - key]);
 			}
-			//éå­—æ¯æƒ…å†µ
+			//·Ç×ÖÄ¸Çé¿ö
 			else {
-				printf("è¾“å…¥ä¸åˆæ³•");
+				printf("ÊäÈë²»ºÏ·¨");
 				return 1;
 			}
 		}
@@ -52,21 +52,21 @@ int main() {
 		int temp;
 		scanf("%d", &key);
 		if (key < 3 || key > 26) {
-			printf("è¾“å…¥æœ‰è¯¯");
+			printf("ÊäÈëÓĞÎó");
 			return 1;
 		}
 		for (i = 0; i < strlen(toEncode); i++) {
-			//å¤§å†™æƒ…å†µ
+			//´óĞ´Çé¿ö
 			if ((int)toEncode[i] > 64 && (int)toEncode[i] < 91) {
 				printf("%c", alphabetUpper[(int)toEncode[i] - 65 + key]);
 			}
-			//å°å†™æƒ…å†µ
+			//Ğ¡Ğ´Çé¿ö
 			else if ((int)toEncode[i] > 96 && (int)toEncode[i] < 123) {
 				printf("%c", alphabetLower[(int)toEncode[i] - 97 + key]);
 			}
-			//éå­—æ¯æƒ…å†µ
+			//·Ç×ÖÄ¸Çé¿ö
 			else {
-				printf("è¾“å…¥ä¸åˆæ³•");
+				printf("ÊäÈë²»ºÏ·¨");
 				return 1;
 			}
 		}
@@ -79,4 +79,5 @@ int main() {
 	return 0;
 }
 
-/*    è¾“å‡ºç»“æœ    */
+/*    Êä³ö½á¹û    */
+

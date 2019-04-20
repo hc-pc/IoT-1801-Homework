@@ -1,3 +1,4 @@
+#include <conio.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <String.h>
@@ -15,6 +16,7 @@ void SortPrint() {
 	for (i = 0; i < 5; i++) {
 		BackupArray[i] = StudentScore[i];
 	}
+
 
 	CurrentMax = BackupArray[0];
 
@@ -87,6 +89,7 @@ int main() {
 	char InputName[6] = {"0"};
 	char InputPassword[7] = {"0"};
 	int RetryTimes = 0;
+	int i;
 
 	printf("+--------------------+\n");
 	printf("|欢迎来到学生管理系统|\n");
@@ -108,7 +111,15 @@ int main() {
 
 	printf("请输入密码");
 	for (RetryTimes; RetryTimes < 3; RetryTimes++) {
-		scanf("%s", InputPassword);
+		//scanf("%s", InputPassword);
+		for (i = 0; i < 7; i++) {
+			InputPassword[i] = getch();
+			if (InputPassword[i] == '\x0d') {
+				InputPassword[i]='\0';
+				break;
+			}
+			printf("*");
+		}
 		if (strcmp(UserPassword, InputPassword)) {
 			printf("密码错误，请重试，剩余机会%d\n", 2 - RetryTimes);
 			if (RetryTimes == 2) {
@@ -119,7 +130,7 @@ int main() {
 			break;
 		}
 	}
-	
+
 //	for (RetryTimes = 0; RetryTimes < 3; RetryTimes++) {
 //		scanf("%s", InputName);
 //		if (strcmp(UserName, InputName)) {
@@ -146,7 +157,7 @@ int main() {
 
 	system("cls");
 
-	int i = 0;
+	i = 0;
 	printf("请输入五位学生成绩\n");
 	for (i = 0; i < 5; i++) {
 		scanf("%d", &StudentScore[i]);
