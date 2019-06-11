@@ -12,7 +12,10 @@
  - [X] [冒泡排序数组](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2018%2012%2011/2018%2012%2011.c) ([2018-12-11](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2018%2012%2011))
 
  - [X] [银行管理系统](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2019%2003%2006/2019%2003%2006%5B非作业%5D.c)<sup>非作业</sup> ([2019-03-06](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2019%2003%2006))
+ 
  - [X] [学生管理系统](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2019%2003%2006/2019%2003%2006.c)([2019-03-06](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2019%2003%2006))
+ 
+ - [X] [数组指针合并](https://github.com/hc-pc/IoT-1801-Homework/blob/master/C/2019%2005%2029/2019%2005%2029.c)([2019-05-29](https://github.com/hc-pc/IoT-1801-Homework/tree/master/C/2019%2005%2029))
 
 ------
 
