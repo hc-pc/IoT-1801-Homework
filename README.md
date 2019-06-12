@@ -15,7 +15,7 @@
  
  - [X] [学生管理系统](https://github.com/iPlanC/IoT-1801-Homework/blob/master/C/2019%2003%2006/2019%2003%2006.c)([2019-03-06](https://github.com/iPlanC/IoT-1801-Homework/tree/master/C/2019%2003%2006))
  
- - [X] [数组指针合并](https://github.com/hc-pc/IoT-1801-Homework/blob/master/C/2019%2005%2029/2019%2005%2029.c)([2019-05-29](https://github.com/hc-pc/IoT-1801-Homework/tree/master/C/2019%2005%2029))
+ - [ ] [数组指针合并](https://github.com/hc-pc/IoT-1801-Homework/blob/master/C/2019%2005%2029/2019%2005%2029.c)([2019-05-29](https://github.com/hc-pc/IoT-1801-Homework/tree/master/C/2019%2005%2029))
 
 ------
 
