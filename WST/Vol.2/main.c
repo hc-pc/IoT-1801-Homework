@@ -13,9 +13,9 @@ void delay(int loop) {
 }
 
 void main() {
-  P1SEL &= ~0x1A;
-  P1DIR |= ~0x1A;
-  P1 &= ~0x1A;
+  P1SEL &= ~0x1B;
+  P1DIR |= ~0x1B;
+  P1 &= ~0x1B;
   while (1) {
     LED1 = 1;
     LED2 = 0; LED3 = 0; LED4 = 0;
