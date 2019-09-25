@@ -9,8 +9,8 @@
 unsigned char statues;
 
 void Init_GPIO() {
-  P1SEL &= ~0x07;
-  P1DIR |= 0x03;
+  P1SEL &= ~0x1F;
+  P1DIR |= 0x1B;
   P1DIR &= ~0x04;
   P1 = 0x00;
   P1INP &= ~0x04;
