@@ -1,0 +1,35 @@
+#include <ioCC2530.h>
+char data[ ]="Hello ZigBee!";
+//*********************************************************************************
+void delay(unsigned int i)
+{   unsigned int j,k;
+    for(k=0;k<i;k++)
+    { for(j=0;j<500;j++);    }}
+//*********************************************************************************
+void initial_usart_tx()
+{   CLKCONCMD &= ~0X7F;                   	//晶振设置为32MHz
+    while(CLKCONSTA & 0X40);                	//等待晶振稳定
+    CLKCONCMD &= ~0X47;                   	//设置系统主时钟频率为32MHz
+    PERCFG = 0X00;                          	//usart0 使用备用位置1 TX-P0.3 RX-P0.2
+    P0SEL |= 0X3C;                          	//P0.2 P0.3 P0.4 P0.5用于外设功能
+    P2DIR &= ~0xC0;                         	//P0优先作为UART方式
+    U0CSR = 0X80;                           	//uart模式 
+    U0GCR = 9;
+    U0BAUD = 59;                            	//波特率设为19200
+    UTX0IF = 0;                            	 	//uart0 tx中断标志位清零    
+}
+//*********************************************************************************
+void uart_tx_string(char *data_tx,int len)
+{   unsigned int j;
+    for(j=0;j<len;j++)
+    {   U0DBUF = *data_tx++;
+        while(UTX0IF == 0);		//等待发送完成
+        UTX0IF = 0;    }}
+//*********************************************************************************
+void main(void)
+{   initial_usart_tx();
+    while(1)
+    {   uart_tx_string(data, sizeof(data));			//sizeof(data)函数计算字符串个数
+        delay(1000);    
+    }
+}
