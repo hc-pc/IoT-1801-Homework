@@ -4,13 +4,13 @@
   * @author  fire
   * @version V1.0
   * @date    2013-xx-xx
-  * @brief   ²âÊÔ°´¼ü
+  * @brief   æµ‹è¯•æŒ‰é”®
   ******************************************************************************
   * @attention
   *
-  * ÊµÑéÆ½Ì¨:Ò°»ğ F103-Ö¸ÄÏÕß STM32 ¿ª·¢°å 
-  * ÂÛÌ³    :http://www.firebbs.cn
-  * ÌÔ±¦    :https://fire-stm32.taobao.com
+  * å®éªŒå¹³å°:é‡ç« F103-æŒ‡å—è€… STM32 å¼€å‘æ¿ 
+  * è®ºå›    :http://www.firebbs.cn
+  * æ·˜å®    :https://fire-stm32.taobao.com
   *
   ******************************************************************************
   */ 
@@ -24,43 +24,36 @@ void delay(int loop) {
 }
 
 /**
-  * @brief  Ö÷º¯Êı
-  * @param  ÎŞ
-  * @retval ÎŞ
+  * @brief  ä¸»å‡½æ•°
+  * @param  æ— 
+  * @retval æ— 
   */ 
 int main(void)
 {	
 	int flag = 0;
-	/* LED¶Ë¿Ú³õÊ¼»¯ */
+	/* LEDç«¯å£åˆå§‹åŒ– */
 	LED_GPIO_Config();
 	//LED1_ON;
 
-	/* °´¼ü¶Ë¿Ú³õÊ¼»¯ */
+	/* æŒ‰é”®ç«¯å£åˆå§‹åŒ– */
 	Key_GPIO_Config();
 	
-	/* ÂÖÑ¯°´¼ü×´Ì¬£¬Èô°´¼ü°´ÏÂÔò·´×ªLED */
+	/* è½®è¯¢æŒ‰é”®çŠ¶æ€ï¼Œè‹¥æŒ‰é”®æŒ‰ä¸‹åˆ™åè½¬LED */
 	while(1)                            
 	{	   
 		if( Key_Scan(KEY1_GPIO_PORT,KEY1_GPIO_PIN) == KEY_ON  )
 		{
-			if (flag == 0) {
-				LED_RED;
-				delay(10000000);
-				LED_RGBOFF;
-			}
-			else {
-				LED_GREEN;
-				delay(10000000);
-				LED_RGBOFF;
-			}
-		} 
-
-//		if( Key_Scan(KEY2_GPIO_PORT,KEY2_GPIO_PIN) == KEY_ON  )
-//		{
-//			LED_GREEN;
-//			delay(10000000);
-//			LED_RGBOFF;
-//		}		
+			
+			LED_RED;
+			delay(10000000);
+			LED_RGBOFF;
+		}
+		if( Key_Scan(KEY2_GPIO_PORT,KEY2_GPIO_PIN) == KEY_ON  )
+		{
+			LED_GREEN;
+			delay(10000000);
+			LED_RGBOFF;
+		}		
 	}
 }
 /*********************************************END OF FILE**********************/
